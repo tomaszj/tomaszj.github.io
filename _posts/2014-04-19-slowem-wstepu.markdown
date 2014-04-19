@@ -1,24 +1,11 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-04-19 19:42:32
-categories: jekyll update
+title:  "Słowem wstępu"
+date:   2014-04-19 19:00:00
+categories: start
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+Niniejsza strona to zbiór artykułów i książek, które warto przeczytać. Ta lista powstaje na mój własny użytek, niemniej zachęcam do znalezienia czegoś dla siebie. Każda z pozycji jest dla mnie w ten czy inny sposób wartościowa.
 
-Jekyll also offers powerful support for code snippets:
+Znajdą się tu również pozycje, które niekoniecznie wyrażają moje poglądy. Najważniejsze jest zmuszenie do myślenia na kwestie dotyczące nas wszystkich. Błędy merytoryczne oraz trywialna agitacja są niedopuszczalne.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
