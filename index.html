@@ -3,14 +3,14 @@ layout: default
 title: TomekCzyta.pl
 ---
 
-<div id="home">
+<div id="content">
   <ul class="posts">
     {% for post in site.posts %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        &nbsp;
-        <span>{{ post.date | date: "%d.%m.%Y" }}</span>
+        <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+        <div class="post-date"><span>{{ post.date | date: "%d.%m.%Y" }}</span></div>
       </li>
     {% endfor %}
   </ul>
+  <div class="clearfix"></div>
 </div>
