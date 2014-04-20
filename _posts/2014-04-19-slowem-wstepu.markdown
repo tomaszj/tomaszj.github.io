@@ -2,6 +2,7 @@
 layout: post
 title:  "Słowem wstępu"
 date:   2014-04-19 19:00:00
+type: Wstęp
 categories: start
 ---
 

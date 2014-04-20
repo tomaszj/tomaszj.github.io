@@ -4,6 +4,7 @@ title:  "Szczepan Twardoch - Więzi Was polskość"
 date:   2014-04-20 19:00:00
 author: Szczepan Twardoch
 source: Wyborcza.pl
+type: Wywiad
 categories: polska relacje
 ---
 Interesujący wywiad, w którym poruszone zostały kwestie obciążenia pojęciem "narodu" i jego dziedzictwa. A&nbsp;także, w jaki sposób stereotypowe postrzeganie "narodu", "faceta", "relacji", "naszych i onych" wpływa negatywnie na nas i nasz światopogląd.

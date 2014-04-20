@@ -9,6 +9,7 @@ title: TomekCzyta.pl
       <li>
         <div class="post-date"><span>{{ post.date | date: "%d.%m.%Y" }}</span></div>
         <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+        <div class="post-type">{{ post.type }}</div>
         <div class="clearfix"></div>
       </li>
     {% endfor %}
