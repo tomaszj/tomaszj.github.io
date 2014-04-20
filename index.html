@@ -7,8 +7,9 @@ title: TomekCzyta.pl
   <ul class="posts">
     {% for post in site.posts %}
       <li>
-        <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
         <div class="post-date"><span>{{ post.date | date: "%d.%m.%Y" }}</span></div>
+        <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+        <div class="clearfix"></div>
       </li>
     {% endfor %}
   </ul>
