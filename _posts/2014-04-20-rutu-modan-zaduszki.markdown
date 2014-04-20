@@ -11,5 +11,7 @@ categories: relacje-polsko-zydowskie warszawa
 
 Lektura tej książki-komiksu to też dla nas świeże spojrzenie ze strony izraelskiego pokolenia, któremu doświadczenia lat 40. XX wieku są co raz bardziej odległe.
 
+Do kupienia m.in. na Allegro.
+
 => [Rutu Modan - "Zaduszki" - kultura gniewu](http://www.kultura.com.pl/index.php?s=k_161&d=k) (Ostatni dostęp: 20.04.2014)
 
