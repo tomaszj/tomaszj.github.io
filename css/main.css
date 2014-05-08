@@ -163,6 +163,10 @@ a:visited { color: #FFBB40; }
 /*****************************************************************************/
 
 /* standard */
+.post-title-header {
+  line-height: 1em;
+}
+
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
