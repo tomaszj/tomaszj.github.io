@@ -1,4 +1,4 @@
 name: Tomek's recipes
 markdown: redcarpet
-pygments: true
+highlighter: true
 

@@ -1,0 +1,25 @@
+.page-title {
+  margin-bottom: 0rem;
+}
+
+.page-subtitle {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.navbar-list {
+  list-style: none;
+}
+
+.navbar-item {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
