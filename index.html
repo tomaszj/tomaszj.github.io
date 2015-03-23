@@ -5,3 +5,10 @@ title: Tomek's recipes
 
 <h3>Hello!</h3>
 <p>This is a set of "recipes" - tutorials on how to achieve and make certain things. Usually computing related.</p>
+
+<h3>Recent recipes</h3>
+{% for post in site.posts %}
+<div class="post">
+  {{ post.title }} - <a href="{{ post.url }}">Read more</a>
+</div>
+{% endfor %}

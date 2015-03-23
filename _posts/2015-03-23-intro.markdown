@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "What is it all about?"
+date:   2015-03-23
+categories: start
+---
+
+This is a set of recipes for various things I've worked on. They'll range from simple web app stubs, through some integration tools to some Project Management/Scrum-ish utilities. Take a look and enjoy!
+
