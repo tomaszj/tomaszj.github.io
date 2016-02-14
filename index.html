@@ -1,14 +1,15 @@
 ---
 layout: default
-title: Tomek's recipes
+title: PROTIPs
 ---
 
-<p><img src="/images/protip_doom.jpg" alt="Protip Cyberdemon from Doom" /></p>
-<p>This is a set of "recipes" - tutorials on how to achieve and make certain things. Usually computing related.</p>
+<p>This is a set of PROTIPs - short tutorials on how to achieve and make certain things. Usually computing related.</p>
 
-<h3>Recent recipes</h3>
+<h3>Recent PROTIPs</h3>
 {% for post in site.posts %}
 <div class="post">
   {{ post.title }} - <a href="{{ post.url }}">Read more</a>
 </div>
 {% endfor %}
+
+<p><img src="/images/protip_doom.jpg" alt="Protip Cyberdemon from Doom" /></p>
