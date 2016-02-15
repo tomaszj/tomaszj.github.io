@@ -33,7 +33,7 @@ Yes, there's an alternative and it's ack! (install that on Mac with `brew instal
 
 ![ack 1st example](/images/grep-ack/ack1.png)
 
-`ack` returns results in nicely-formatted way. But it's biggest benefit isn't a cool way to display results. It's its sensible defaults - `ack` is designed to search through source code, so it ignores .git hidden folders, binary files and many more! Result is a snappy search, just like you would expect.
+`ack` returns results in nicely-formatted way. However, the biggest benefit is sensible defaults - `ack` is designed to search through source code, so it ignores .git hidden folders, binary files and many more! Result is a snappy search, just like you would expect.
 
 `ack` uses flags you already know from `grep`:
 
