@@ -7,6 +7,8 @@ categories: command-line utilities
 
 TL;DR: Use `ack 'search-phrase'` to quickly locate interesting bits in your source code.
 
+#### Old, sad and clumsy
+
 Finding a certain text or phrase across a project can be done in multiple ways. One is to use search/replace facility in editor or your favourite IDE. Sooner or later, you will stumble upon the old, mighty `grep`:
 
     $ grep -r 'search-phrase' .
@@ -26,6 +28,8 @@ This time round, `grep` will do case-insensitive search and will also print the 
 ![grep 3rd example](/images/grep-ack/grep3.png)
 
 And all is great, until your repository grows bigger and bigger, and someone checks in a few binary files. Before you realise, `grep` searches take a dozen-ish seconds to complete. Is there a clever way out of this madness, without giving million parameters to `grep`?
+
+#### ack - new, snappy and simply brilliant
 
 Yes, there's an alternative and it's ack! (install that on Mac with `brew install ack`). Just do:
 
