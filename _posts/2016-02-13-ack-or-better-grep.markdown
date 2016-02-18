@@ -5,6 +5,8 @@ date:   2016-02-13
 categories: command-line utilities
 ---
 
+NOTE: You can search through your code even quicker using `ag` - [READ HERE](/command-line/utilities/2016/02/18/ag-quicker-than-ack.html)
+
 TL;DR: Use `ack 'search-phrase'` to quickly locate interesting bits in your source code.
 
 #### Old, sad and clumsy
