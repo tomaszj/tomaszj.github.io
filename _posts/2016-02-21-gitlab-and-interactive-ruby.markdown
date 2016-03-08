@@ -19,14 +19,16 @@ During a short test of the API, it quickly turned out that the response did not 
 
 So what's the interactive fuss all about? I've set up Vim using instructions from [Jack Franklin's](https://github.com/jackfranklin) [tilvim.com article](http://tilvim.com/2013/06/24/live-ruby-execution.html). Then I fire up a new Ruby file and stick in the following code to load credentials and URL using .env file:
 
-    require 'dotenv'
+```ruby
+require 'dotenv'
 
-    # Dotenv loads .env file from the folder and sets values of ENV hash to these.
-    # This way you can easily separate tokens, usernames, etc. from your code.
-    Dotenv.load
+# Dotenv loads .env file from the folder and sets values of ENV hash to these.
+# This way you can easily separate tokens, usernames, etc. from your code.
+Dotenv.load
 
-    gitlab_token = ENV["GITLAB_TOKEN"]
-    gitlab_url = ENV["GITLAB_URL"] + "/api/v3"
+gitlab_token = ENV["GITLAB_TOKEN"]
+gitlab_url = ENV["GITLAB_URL"] + "/api/v3"
+```
 
 Now I can mark the two last lines to show output using <F3> and then press <F4> to execute script. That's what I get:
 
@@ -34,8 +36,10 @@ Now I can mark the two last lines to show output using <F3> and then press <F4> 
 
 Let's now create a Faraday connection and try to get the response from `/api/v3/projects` endpoint:
 
-    gitlab_conn = Faraday.new(url: gitlab_url)
-    response = gitlab_conn.get "projects", page: 1, per_page: 100 # =>
+```ruby
+gitlab_conn = Faraday.new(url: gitlab_url)
+response = gitlab_conn.get "projects", page: 1, per_page: 100 # =>
+```
 
 *Mark the last line* and run Ruby inline. This will quickly lead us to discover that we forgot to include the private token, due to HTTP 401 error:
 
@@ -43,8 +47,10 @@ Let's now create a Faraday connection and try to get the response from `/api/v3/
 
 Update previous snippet to include `PRIVATE-TOKEN` header in Faraday's connection constructor and run it again:
 
-    gitlab_conn = Faraday.new(url: gitlab_url, headers: {"PRIVATE-TOKEN": gitlab_token})
-    response = gitlab_conn.get "projects", page: 1, per_page: 100 # =>
+```ruby
+gitlab_conn = Faraday.new(url: gitlab_url, headers: {"PRIVATE-TOKEN": gitlab_token})
+response = gitlab_conn.get "projects", page: 1, per_page: 100 # =>
+```
 
 ![Inline Ruby execution 3rd example](/images/gitlab-ruby/gitlab-ruby3.png)
 
@@ -52,19 +58,21 @@ Update previous snippet to include `PRIVATE-TOKEN` header in Faraday's connectio
 
 We're now sure that the connection to the API works and we've examined the structure. Now we can write simple loop code to get all pages together and run it:
 
-    all_projects = []
-    page_index = 1
+```ruby
+all_projects = []
+page_index = 1
 
-    loop do
-      response = gitlab_conn.get "projects", page: page_index, per_page: 100
-      projects = JSON.parse(response.body)
-      break if projects.empty?
-      all_projects.concat(projects)
-      page_index += 1
-    end
+loop do
+  response = gitlab_conn.get "projects", page: page_index, per_page: 100
+  projects = JSON.parse(response.body)
+  break if projects.empty?
+  all_projects.concat(projects)
+  page_index += 1
+end
 
-    page_index # =>
-    all_projects.size  # =>
+page_index # =>
+all_projects.size  # =>
+```
 
 And here's the result:
 

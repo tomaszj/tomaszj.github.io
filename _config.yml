@@ -1,2 +1,4 @@
 name: PRO-TIPs
+kramdown:
+  input: GFM
 
