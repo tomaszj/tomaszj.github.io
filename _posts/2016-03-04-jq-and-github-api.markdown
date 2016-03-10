@@ -23,7 +23,7 @@ I'll store the response in a file for further activitites:
 
 #### jq
 
-jq is a command-line tool which takes a "program" and the JSON as inputs. The program dictates what the output is going to be. The simplest program is `'.'`, which just outputs nicely formatted input.
+jq is a command-line tool which takes a function (a string specifying what `jq` should do) and the JSON as inputs. The simplest function is `'.'`, which does not alter the input and formats it nicely for free.
 
 ```bash
 < github_response.json | jq '.'
