@@ -13,13 +13,13 @@ Just run `brew install jq` and you'll be sorted.
 
 #### GitHub API
 
-Recently, I needed to pull down a list of repositories from Gitlab (no, that's not a typo) for some particular task. Let's see how we could do that based on public GitHub API. The public API exposes `/users/:username/repos` endpoint. It can be called with `curl` like this:
+Recently, I needed to pull down a list of repositories from Gitlab (no, that's not a typo) for some particular task. Let's see how we could do that based on public GitHub API. The public API exposes `/users/:username/repos` endpoint. It can be called with `curl` like this (please note that GitHub has the same pagination mechanism as Gitlab):
 
-    curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/users/tomaszj/repos
+    curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/users/tomaszj/repos?per_page=100
 
-I'll store the response in a file for further activitites:
+**I'll store the response in a file for further activitites**:
 
-    curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/users/tomaszj/repos > github_response.json
+    curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/users/tomaszj/repos?per_page=100 > github_response.json
 
 #### jq
 
