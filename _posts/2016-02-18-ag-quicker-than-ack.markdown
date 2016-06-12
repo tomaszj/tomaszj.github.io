@@ -25,7 +25,7 @@ Now, some useful flags for `ag`. `-C` provides context around the search:
 
 ![ag 2nd example](/images/ag/ag2.png)
 
-`-l` returns names of the matched files, ideal for further procerssing with, i.e. `xargs`:
+`-l` returns names of the matched files, ideal for further processing with, i.e. `xargs`:
 
     $ ag -l 'grep -r'
 
