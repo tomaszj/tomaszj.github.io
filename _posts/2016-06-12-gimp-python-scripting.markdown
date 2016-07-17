@@ -77,6 +77,8 @@ On Mac, I just opened all the images in Preview and used standard printing to pr
 
 Here's a gist that contains whole script together with sample names and added filename handling, feel free to use it: [https://gist.github.com/tomaszj/fe25e368d860fb399987a697c70369e4](https://gist.github.com/tomaszj/fe25e368d860fb399987a697c70369e4)
 
+Here's a GIMP file I produced: [Link to the GIMP file prepared in the article](/images/gimp/party_parrot_name_card.xcf)
+
 Here's the Python-Fu window with the script already pasted in:
 
 ![Screen showing GIMP with already pasted script](/images/gimp/pasted_script.png)
