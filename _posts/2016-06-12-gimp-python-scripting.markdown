@@ -31,9 +31,9 @@ Now, we can start typing Python!
 
 ```python
 gimp.image_list()                       # Gets currently open images in GIMP.
-original_image = gimp.image_list()[0]   # Gets the currently open image if we're working one one.
+original_image = gimp.image_list()[0]   # Gets the currently open image if we're working on one.
 
-image = pdb.gimp_image_duplicate(original_image) # Gives a copy of the image to work with
+image = pdb.gimp_image_duplicate(original_image) # Gives a copy of the image to work with.
 ```
 
 To work on a layer, we need to get it first:
