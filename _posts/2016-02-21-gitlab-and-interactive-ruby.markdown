@@ -11,7 +11,7 @@ TL;DR: Gitlab has a simple API which has a few caveats (paging). This leads to a
 
 I'm interested in getting a list of projects and their git SSH paths. To do that I'm going to use the `/api/v3/projects` endpoint ([API here](http://doc.gitlab.com/ce/api/projects.html#list-projects)). To use the API, you have to obtain a "private token", which can be found on your Gitlab account.
 
-During a short test of the API, it quickly turned out that the response did not contain all the entries. The responses are paged (silently), so I had to collect all the pages before going any further. Paging is controlled via `page` and `per_page` query params, see [here](http://doc.gitlab.com/ce/api/#pagination):
+During a short test of the API, it quickly turned out that the response did not contain all the entries. The responses are silently paged, so I had to collect all the pages before going any further. Paging is controlled via `page` and `per_page` query params, see [here](http://doc.gitlab.com/ce/api/#pagination):
 
     /api/v3/projects?page=1&per_page=100
 
